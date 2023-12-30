@@ -7,3 +7,6 @@ These assignments cover all the foundamental knowledge in JAVA including recursi
 In the next Semester, I'm going to delve deeper in the algorithm world to stremeline my code efficiency better.
 Hope you enjoy the works I done so far.
 ```
+```
+The Assignment question please refer to the HTML I provided down below.
+```
