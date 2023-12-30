@@ -8,5 +8,5 @@ In the next Semester, I'm going to delve deeper in the algorithm world to streme
 Hope you enjoy the works I done so far.
 ```
 ```
-The Assignment question please refer to the HTML I provided down below.
+The Assignment questions please refer to the HTML I provided down below.
 ```
