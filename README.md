@@ -1,4 +1,4 @@
-# CSE_Assignment
+# JAVA_Assignments
 
 
 Hello everyone,  
