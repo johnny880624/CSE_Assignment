@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html -->
+<html lang="en" class="js-focus-visible" data-js-focus-visible="" style="--hypothesis-other-content-color: var(--hypothesis-color-yellow); --hypothesis-other-content-secondColor: var(--hypothesis-color-yellow-1); --hypothesis-other-content-thirdColor: var(--hypothesis-color-yellow-2); --hypothesis-user-annotations-color: var(--hypothesis-color-orange); --hypothesis-user-annotations-secondColor: var(--hypothesis-color-orange-1); --hypothesis-user-annotations-thirdColor: var(--hypothesis-color-orange-2); --hypothesis-user-highlights-color: var(--hypothesis-color-purple); --hypothesis-user-highlights-secondColor: var(--hypothesis-color-purple-1); --hypothesis-user-highlights-thirdColor: var(--hypothesis-color-purple-2);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/">
+
+    <title>Assignment 4: APIsolutely About Zombies — CS Java</title>
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/pygments.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/basic.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/matrixeq.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/accessibility.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/webgldemo.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/webglinteractive.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/CodeChat.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/bootstrap-sphinx.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/637.fafafbd97df8a0d1.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/runestone.e4d5592da655219f.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/custom.css">
+
+
+
+    <script type="text/javascript" id="www-widgetapi-script" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/www-widgetapi.js" async=""></script><script data-url_root="../" id="documentation_options" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/documentation_options.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/jquery.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/underscore.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/doctools.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/matrixeq.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/webglinteractive.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/FileSaver.min.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/html4css1.css"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/animationbase.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/runtime.2a6a972e6f4ec153.bundle.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/637.d54be67956c5c660.bundle.js"></script>
+    <script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/runestone.e00ad9c8384ced97.bundle.js"></script>
+    <link rel="index" title="Index" href="https://131text.com/ns/books/published/csjava/genindex.html">
+    <link rel="search" title="Search" href="https://131text.com/ns/books/published/csjava/search.html">
+    <link rel="next" title="Module 5: Writing Methods" href="https://131text.com/ns/books/published/csjava/Module5-Methods/toctree.html">
+    <link rel="prev" title="Studio 4: Flag Day" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/studio.html">
+
+
+<link rel="shortcut icon" href="https://131text.com/runestone/static/favicon.ico" type="image/ico">
+
+
+
+<link rel="canonical" href="https://ns/books/published/csjava/Module4-Input-and-Output/assignment.html">
+
+
+<script>
+  eBookConfig = {};
+  
+    
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = '';
+    eBookConfig.app = eBookConfig.host + '/runestone';
+    eBookConfig.course = 'csjava';
+    eBookConfig.basecourse = 'csjava';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.email = '';
+    eBookConfig.isInstructor = false;
+    eBookConfig.username = '';
+    eBookConfig.readings = [];
+    eBookConfig.activities = {}
+    eBookConfig.downloadsEnabled = false;
+    eBookConfig.allow_pairs = false
+    eBookConfig.enableCompareMe = true;
+    // _`new_server_prefix`: Defined by the server to be the path to the new server.
+    eBookConfig.new_server_prefix = '/ns';
+    
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = false;
+  eBookConfig.acDefaultLanguage = 'java' ? 'java' : 'python'
+  eBookConfig.runestone_version = '6.3.6';
+  eBookConfig.jobehost = '';
+  eBookConfig.proxyuri_runs = '';
+  eBookConfig.proxyuri_files = '';
+  eBookConfig.enable_chatcodes = false ? false : false;
+  eBookConfig.enableScratchAC = true;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+    
+        
+    
+
+
+
+  <link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/657.css"><link rel="sidebar" href="https://hypothes.is/app.html" type="application/annotator+html" data-hypothesis-asset=""><link rel="notebook" href="https://hypothes.is/notebook" type="application/annotator+html" data-hypothesis-asset=""><link rel="profile" href="https://hypothes.is/user-profile" type="application/annotator+html" data-hypothesis-asset=""><link rel="preload" as="style" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a" data-hypothesis-asset=""><link rel="hypothesis-client" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/boot.js" type="application/annotator+javascript" data-hypothesis-asset=""><script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/annotator.bundle.js" data-hypothesis-asset=""></script><link rel="stylesheet" type="text/css" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/highlights.css" data-hypothesis-asset=""></head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="https://131text.com/runestone/default/user/login" aria-label="Login"><img src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/RAIcon.png" alt=""></a>
+        
+        <a class="navbar-brand" href="https://131text.com/ns/books/published/csjava/index.html" aria-label="index-page">
+          
+            
+            csjava
+            
+          
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+        <li><span id="browsing_warning"><p class="navbar_message">Saving and Logging are Disabled</p></span></li>
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class="dropdown-menu">
+            
+                <li><a href="https://131text.com/ns/books/published/csjava/index.html" aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href="https://131text.com/ns/books/published/csjava/genindex.html">Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="https://131text.com/ns/books/published/csjava/search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes">
+                <input type="hidden" name="area" value="default">
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class="loggedinuser">Not logged in</span></li>
+            <li class="divider"></li>
+            <li><a href="https://131text.com/runestone/assignments/chooseAssignment.html">Assignments</a></li>
+            <li><a href="https://131text.com/runestone/assignments/practice">Practice</a></li>
+            <li id="inst_peer_link" style="display: none;"><a href="https://131text.com/runestone/peer/instructor.html">Peer Instruction (Instructor)</a></li>            
+            <li><a href="https://131text.com/runestone/peer/student.html">Peer Instruction (Student)</a></li>            
+            <li class="divider"></li>
+            
+            <li><a href="https://131text.com/runestone/default/courses">Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link" style="display: none;"><a href="https://131text.com/runestone/admin/index">Instructor's Page</a></li>
+            
+            <li><a href="https://131text.com/runestone/dashboard/studentreport">Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="https://131text.com/runestone/default/user/profile" id="profilelink" style="display: none;">Edit Profile</a></li>
+            <li><a href="https://131text.com/runestone/default/user/change_password" id="passwordlink" style="display: none;">Change Password</a></li>
+            <li><a href="https://131text.com/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class="loginout"><a href="https://131text.com/runestone/default/user/login">Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()">
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode">Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href="http://runestoneinteractive.org/pages/faq.html">FAQ</a></li>
+            <li><a href="https://runestone.academy/ns/books/published/instructorguide/index.html">Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href="http://runestoneinteractive.org/">About Runestone</a></li>
+            <li><a href="https://131text.com/runestone/default/reportabug?course=csjava&amp;page=assignment">Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+            <script></script>
+<li class="dropdown globaltoc-container">
+    <a href="https://131text.com/ns/books/published/csjava/index.html" class="dropdown-toggle" data-toggle="dropdown" aria-label="index">This Chapter<b class="caret"></b></a>
+    <ul class="dropdown-menu globaltoc">
+         
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html">Assignment 4: APIsolutely About Zombies</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/exercises.html">Module 4 Exercises</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/studio.html">Studio 4: Flag Day</a>
+        </li>
+         
+        
+    </ul>
+</li>
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - Studio 4: Flag Day" data-toggle="tooltip">
+    <a href="studio.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Module 5: Writing Methods' data-toggle="tooltip" >              
+    <a href="../Module5-Methods/toctree.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  window.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+<!-- Ad Serving for Runestone Campaign -->
+
+    
+        
+    
+
+
+  
+  <section id="assignment-4-apisolutely-about-zombies">
+<h1>Assignment 4: APIsolutely About Zombies<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#assignment-4-apisolutely-about-zombies" title="Permalink to this heading">¶</a></h1>
+<section id="assignment-setup">
+<h2>Assignment Setup<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#assignment-setup" title="Permalink to this heading">¶</a></h2>
+<p>To create your repository go <a class="reference external" href="https://classroom.github.com/a/fkuhmMmE">here</a>. Then follow the same accept/import process described in <a class="reference external" href="https://131text.com/ns/books/published/csjava/Module0-Introduction/software.html">the setup instructions</a>.</p>
+</section>
+<section id="zombies">
+<h2>Zombies<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#zombies" title="Permalink to this heading">¶</a></h2>
+<p>This assignment is the first step in a sequence of assignments that will simulate <a class="reference external" href="https://en.wikipedia.org/wiki/Zombie">zombies</a>! In this part you will prepare the simulation data and display the entities being simulated (the zombies and non-zombies/humans). In the next part (Assignment 5) we will actually simulate the interaction between the two.</p>
+<p>There are a few reasons for this choice of subject matter:</p>
+<ul>
+<li><p>These assignments show a real-world application of computing. The structure we will create is used in many simulations and games, and computer scientists often do similar work to visualize data and understand natural phenomena.</p>
+<ul class="simple">
+<li><p>Games and simulations often have a loop that simulates time steps. The typical flow of this loop is:</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Check if the game/simulation should continue (part of Assignment 5)</p></li>
+<li><p>Update all the items being simulated for the current time step (part of Assignment 5)</p></li>
+<li><p>Show or record any progress (we’ll do this here in Assignment 4)</p></li>
+</ol>
+</li>
+<li><p>Simulating biological systems can be fascinating but complex. Using zombies allows us to simplify the rules of the system, which means shorter assignments more focused on the CS concepts we want you to learn.</p></li>
+</ul>
+</section>
+<section id="information-needed">
+<h2>Information Needed<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#information-needed" title="Permalink to this heading">¶</a></h2>
+<p>In order to simulate how a zombie infection can spread, we will simulate:</p>
+<ul class="simple">
+<li><p>Zombies, which have a 2D location. The x and y values can range from 0.0 to 1.0.</p></li>
+<li><p>Non-Zombies, which also have a 2D location with values ranging from 0.0 to 1.0.</p></li>
+</ul>
+<p>In other words, for every entity (zombie or non-zombie), we will want to keep track of the entity’s current coordinates and whether the entity is a zombie. We can use a boolean for the entity type, with true to indicate a zombie and false to indicate a non-zombie.</p>
+</section>
+<section id="data-management">
+<h2>Data Management<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#data-management" title="Permalink to this heading">¶</a></h2>
+<p>There are several ways to manage information like this. For this assignment, we’ll use an approach sometimes called <a class="reference external" href="https://en.wikipedia.org/wiki/Parallel_array">parallel arrays</a>. The basic idea is that we will have three arrays to keep track of <code class="docutils literal notranslate"><span class="pre">N</span></code> entities:</p>
+<ol class="arabic simple">
+<li><p>An array of length <code class="docutils literal notranslate"><span class="pre">N</span></code> that contains whether or not each entity is a zombie. Call this the <code class="docutils literal notranslate"><span class="pre">areZombies</span></code> array.</p></li>
+<li><p>An array of length <code class="docutils literal notranslate"><span class="pre">N</span></code> that contains the x coordinates of all the entities. Call this the <code class="docutils literal notranslate"><span class="pre">xs</span></code> array.</p></li>
+</ol>
+<p>Each thing being simulated will be associated with an index. For example, <code class="docutils literal notranslate"><span class="pre">areZombies[0]</span></code>, <code class="docutils literal notranslate"><span class="pre">xs[0]</span></code>, and <code class="docutils literal notranslate"><span class="pre">ys[0]</span></code> represent the type and coordinates of a single entity in our simulation. In a sense you can think about <code class="docutils literal notranslate"><span class="pre">areZombies</span></code>, <code class="docutils literal notranslate"><span class="pre">xs</span></code>, and <code class="docutils literal notranslate"><span class="pre">ys</span></code> as being columns in a table. Each individual row of the table represents a specific thing being simulated. The three arrays are considered “in parallel” since the i-th items in each array represent different aspects of a single composite thing.</p>
+</section>
+<section id="data-encoding">
+<h2>Data Encoding<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#data-encoding" title="Permalink to this heading">¶</a></h2>
+<p>The initial locations of zombies and non-zombies will be provided in a file. The file will have a very specific format:</p>
+<ul class="simple">
+<li><p>The first line of the file will indicate how many entities are in the file (<code class="docutils literal notranslate"><span class="pre">N</span></code>)</p></li>
+<li><p>The next <code class="docutils literal notranslate"><span class="pre">N</span></code> lines will each contain information for a single entity:</p>
+<ul>
+<li><p>Each line will start with a <code class="docutils literal notranslate"><span class="pre">String</span></code>. <code class="docutils literal notranslate"><span class="pre">"Zombie"</span></code> indicates a zombie and <code class="docutils literal notranslate"><span class="pre">"Nonzombie"</span></code> indicates a non-zombie.</p></li>
+<li><p>Second will be a real number (<code class="docutils literal notranslate"><span class="pre">double</span></code>) indicating the initial x position of the entity.</p></li>
+<li><p>Third will be another real number (<code class="docutils literal notranslate"><span class="pre">double</span></code>) indicating the initial y position of the entity.</p></li>
+</ul>
+</li>
+</ul>
+<p>We’ve included several example files. When you run the program, you will see a file dialog box that will allow you to pick a <code class="docutils literal notranslate"><span class="pre">.sim</span></code> file. This is the file that your code will read from (click to enlargen examples below).</p>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/FileView.png"><img alt="File View" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/FileView.png" style="width: 300px; height: 200px;"></a>
+<ul class="simple">
+<li><p>1_nonzombie.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/1_nonzombie.png"><img alt="1_nonzombie" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/1_nonzombie.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>1_on_1.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/1_on_1.png"><img alt="1_on_1" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/1_on_1.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>1_zombie.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/1_zombie.png"><img alt="1_zombie" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/1_zombie.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>5_nonzombies.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/5_nonzombies.png"><img alt="5_nonzombies" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/5_nonzombies.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>5_zombies.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/5_zombies.png"><img alt="5_zombies" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/5_zombies.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>all_alone.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/all_alone.png"><img alt="all_alone" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/all_alone.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>bubbles.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/bubbles.png"><img alt="bubbles" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/bubbles.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>contagion.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/contagion.png"><img alt="contagion" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/contagion.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>cse131_vs_zombies.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/cse131_vs_zombies.png"><img alt="cse131_vs_zombies" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/cse131_vs_zombies.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>in_the_house.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/in_the_house.png"><img alt="in_the_house" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/in_the_house.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<ul class="simple">
+<li><p>surrounded.sim:</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+<a class="reference internal image-reference" href="./Assignment 4_ APIsolutely About Zombies — CS Java_files/surrounded.png"><img alt="surrounded" class="align-center" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/surrounded.png" style="width: 300px; height: 200px;"></a>
+<div class="line-block">
+<div class="line"><br></div>
+</div>
+</section>
+<section id="a-note-about-strings">
+<h2>A Note About Strings<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#a-note-about-strings" title="Permalink to this heading">¶</a></h2>
+<p>Although the files will contain a String for each entity type, we will want to represent the type as a boolean value in our areZombies array.</p>
+<p>Unlike primitive data types (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span></code>, <code class="docutils literal notranslate"><span class="pre">boolean</span></code>, etc.), comparing the value of two Strings requires using <code class="docutils literal notranslate"><span class="pre">.equals()</span></code> instead of <code class="docutils literal notranslate"><span class="pre">==</span></code>. Using <code class="docutils literal notranslate"><span class="pre">==</span></code> on Strings checks if the two Strings are the exact same object while <code class="docutils literal notranslate"><span class="pre">.equals()</span></code> checks if the Strings contain the same characters. Here is an example of the difference between the two approaches:</p>
+
+    <div class="runestone runestone-component-ready" style="margin-left: auto; margin-right:auto">
+        <iframe id="uM19VWfas10" data-component="youtube" class="align-center youtube-video" data-video-height="281" data-question_label="1" data-video-width="500" data-video-videoid="uM19VWfas10" data-video-divid="uM19VWfas10" data-video-start="0" data-video-end="-1" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Use a.equals(b) for Strings.  Do NOT use ==." width="500" height="281" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/uM19VWfas10.html"></iframe>
+    <p class="runestone_caption">Activity: 1 YouTube  <span class="runestone_caption_divid">(uM19VWfas10)</span></p></div>
+    </section>
+<section id="apis">
+<h2>APIs<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#apis" title="Permalink to this heading">¶</a></h2>
+<p>This assignment will utilize two different APIs:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Scanner</span></code>: This allows us to read data from a file. We’ll get the type and location of all entities from a file. This is slightly different from how we have used Scanner in the past, as we will not be prompting the user for input values.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">StdDraw</span></code>: This will allow us to display the location of the zombies and non-zombies as our simulation progresses.</p></li>
+</ul>
+<section id="using-scanner-to-read-from-a-file">
+<h3>Using Scanner to read from a file<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#using-scanner-to-read-from-a-file" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>When Scanner is connected to a file, <code class="docutils literal notranslate"><span class="pre">nextDouble()</span></code>, will get the next value in the selected file if it’s a double. If the next value is not a double, it will ask the user for a double instead.</p></li>
+<li><p>Each time you call <code class="docutils literal notranslate"><span class="pre">nextDouble()</span></code>, Scanner will process that value, and the next call to <code class="docutils literal notranslate"><span class="pre">nextDouble()</span></code> will return the next double in the file, whether it’s on the same line or the next.</p></li>
+<li><p>Make sure you use the method that asks for the data type that corresponds to the next value in the file. For example, if the next value in the file is a double, make sure to call <code class="docutils literal notranslate"><span class="pre">nextDouble()</span></code>, not <code class="docutils literal notranslate"><span class="pre">next()</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<section id="assignment-requirements">
+<h2>Assignment Requirements<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#assignment-requirements" title="Permalink to this heading">¶</a></h2>
+<p>Your work needs to:</p>
+<ol class="arabic simple">
+<li><p>Read all the information from the selected file and store it in parallel arrays. Use <code class="docutils literal notranslate"><span class="pre">Scanner</span></code> methods as described above.</p></li>
+<li><p>Display all the elements in the simulation using Sedgewick’s <code class="docutils literal notranslate"><span class="pre">StdDraw</span></code>.</p></li>
+</ol>
+<ul class="simple">
+<li><p>For full credit you <em>must</em> read in all entities and store them in arrays <em>before displaying anything</em>. (This structure will make future assignments easier.)</p></li>
+<li><p>Zombies should be displayed with filled red circles with a radius of <code class="docutils literal notranslate"><span class="pre">0.008</span></code>.</p></li>
+<li><p>Non-Zombies should be displayed with filled black circles with a radius of <code class="docutils literal notranslate"><span class="pre">0.008</span></code>.</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">StdDraw</span></code> to display the ratio of Non-Zombies to total entities in the corner of the window (choose whatever corner you like). For example, in a simulation that has 3 Non-Zombies and 4 Zombies, this would look like “<code class="docutils literal notranslate"><span class="pre">3/7</span></code>”. Make sure that this display is readable.</p></li>
+</ol>
+</section>
+<section id="assignment-procedure">
+<h2>Assignment Procedure<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#assignment-procedure" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">ZombieData</span></code> in the <code class="docutils literal notranslate"><span class="pre">assignment4</span></code> package. One line has already been done for you. The remaining work is summarized with <code class="docutils literal notranslate"><span class="pre">TODO</span></code> comments.</p></li>
+<li><p>Use code to read in the first line of the file (the <code class="docutils literal notranslate"><span class="pre">N</span></code>).</p></li>
+<li><p>Create arrays of appropriate size (for the “parallel data”).</p></li>
+<li><p>Read in each additional piece of data. Remember the file format: <code class="docutils literal notranslate"><span class="pre">String</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span></code>.</p></li>
+<li><p>Display all the entities using <code class="docutils literal notranslate"><span class="pre">StdDraw</span></code>.</p></li>
+<li><p>Display the ratio of Non-Zombies to total entities in a corner of the canvas using <code class="docutils literal notranslate"><span class="pre">StdDraw</span></code>.</p></li>
+</ul>
+<p>When running the program:</p>
+<ul class="simple">
+<li><p>Select the file you wish to read from the file dialog box.</p></li>
+</ul>
+</section>
+<section id="submitting-your-work">
+<h2>Submitting your work<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/assignment.html#submitting-your-work" title="Permalink to this heading">¶</a></h2>
+<p>To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via wustl-cse.help.</p>
+</section>
+</section>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal">1</span> of <span id="scprogressposs">2</span> activities on this page <div id="subchapterprogress" aria-label="Page progress" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left loggedout" style="width: 251px;"></div></div>
+  </div>
+
+  <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title="" data-toggle="tooltip" data-original-title="Previous Section - Studio 4: Flag Day">
+  <a href="https://131text.com/ns/books/published/csjava/Module4-Input-and-Output/studio.html" aria-label="Previous - Studio 4: Flag Day">
+    <i class="prevNav glyphicon glyphicon-chevron-left" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title="" data-toggle="tooltip" data-original-title="Next Section - Module 5: Writing Methods">
+    <a href="https://131text.com/ns/books/published/csjava/Module5-Methods/toctree.html" aria-label="Next - Module 5: Writing Methods">
+      <i id="relationsNextIcon" class="nextNav glyphicon glyphicon-chevron-right" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+</div>
+<footer class="footer">user not logged in</footer>
+
+
+
+  
+    
+  
+
+  
+    <script type="application/json" class="js-hypothesis-config">
+    {
+      "showHighlights": false
+    }
+    </script>
+
+    <script async="" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/embed(1).js"></script>
+    <!--provide space to prevent hypothes.is sidebar from obscuring content-->
+    <style>@media screen and (max-width:767px) { body { padding-right: 21px; }}</style>
+
+  
+
+
+<script>
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch();
+  });
+</script>
+
+
+  
+<hypothesis-sidebar data-js-focus-visible=""><template shadowrootmode="open"><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"><div class="sidebar-container sidebar-collapsed" style=""><div><div class="absolute left-[-33px] w-[33px] z-2 text-px-base leading-none"><button role="button" data-component="Button" type="button" aria-label="Annotation sidebar" aria-pressed="false" aria-expanded="false" class="transition-colors focus-visible-ring ring-inset h-[40px] w-[33px] pl-[6px] rounded-bl bg-white text-grey-5 hover:text-grey-9 border-l border-b" title="Annotation sidebar" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" data-component="CaretLeftIcon"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12 6 8l4-4"></path></g></svg></button><div class="space-y-px-1.5 mt-px-2"><button role="button" data-component="Button" type="button" aria-label="Show highlights" class="focus-visible-ring transition-colors whitespace-nowrap flex items-center justify-center rounded w-[30px] h-[30px] shadow border bg-white text-grey-6 hover:text-grey-9" title="Show highlights"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" data-component="HideIcon"><path fill="currentColor" d="m1.613.21.094.083 14 14a1 1 0 0 1-1.32 1.497l-.094-.083-14-14A1 1 0 0 1 1.613.21Zm.583 4.845a1 1 0 0 1 .292 1.384C2.165 6.935 2 7.46 2 8c0 2.123 2.628 4 6 4 .22 0 .44-.008.657-.024a1 1 0 0 1 .147 1.994c-.266.02-.534.03-.804.03-4.36 0-8-2.6-8-6 0-.937.283-1.84.812-2.653a1 1 0 0 1 1.384-.292ZM8 2c4.36 0 8 2.6 8 6 0 .937-.283 1.84-.812 2.653a1 1 0 0 1-1.676-1.092C13.835 9.065 14 8.54 14 8c0-2.123-2.628-4-6-4-.22 0-.44.008-.657.024a1 1 0 1 1-.147-1.994C7.462 2.01 7.73 2 8 2Z"></path></svg></button><button role="button" data-component="Button" type="button" aria-label="New page note" class="focus-visible-ring transition-colors whitespace-nowrap flex items-center justify-center rounded w-[30px] h-[30px] shadow border bg-white text-grey-6 hover:text-grey-9" title="New page note"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" data-component="NoteIcon"><path fill="currentColor" d="M14 0a2 2 0 0 1 1.995 1.85L16 2v7a1 1 0 0 1-.31.724l-.09.076-8 6a1 1 0 0 1-.471.192L7 16H2a2 2 0 0 1-1.995-1.85L0 14V2A2 2 0 0 1 1.85.005L2 0h12Zm0 2H2v12h4V9a1 1 0 0 1 .883-.993L7 8h7V2Zm-2 8H8v3l4-3Z"></path></svg></button></div><div class="sr-only" role="status" data-testid="toolbar-status">Highlights hidden</div></div></div><div data-testid="sidebar-edge" class="absolute top-0 bottom-0 w-[23px] left-[-22px] flex flex-col pt-[110px] pr-[5px] bg-grey-2 sidebar-collapsed:bg-black/[.08] pointer-events-none"><hypothesis-bucket-bar data-js-focus-visible="" style="display: block; flex-grow: 1; width: 100%;"><template shadowrootmode="open"><ul class="relative"></ul><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-bucket-bar></div><iframe allowfullscreen="" src="https://hypothes.is/app.html#config=%7B%22openSidebar%22%3Afalse%2C%22showHighlights%22%3A%22never%22%2C%22origin%22%3A%22https%3A%2F%2Fhypothes.is%22%2C%22version%22%3A%221.1398.0%22%2C%22hostURL%22%3A%22https%3A%2F%2F131text.com%2Fns%2Fbooks%2Fpublished%2Fcsjava%2FModule4-Input-and-Output%2Fassignment.html%22%7D" title="Hypothesis annotation viewer" class="sidebar-frame"></iframe></div><div><ul aria-live="polite" aria-relevant="additions" class="w-full space-y-2" data-component="ToastMessages"></ul></div></template></hypothesis-sidebar><hypothesis-notebook data-js-focus-visible=""><template shadowrootmode="open"><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-notebook><hypothesis-profile data-js-focus-visible=""><template shadowrootmode="open"><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-profile><hypothesis-adder data-js-focus-visible="" style="position: absolute; top: 0px; left: 0px;"><template shadowrootmode="open"><div class="all-initial border border-solid border-grey-3 absolute select-none bg-white rounded shadow-intense opacity-5" data-component="AdderToolbar" dir="ltr" style="visibility: hidden;"><div class="flex group"><button role="button" data-component="Button" type="button" aria-label="Annotate" class="focus-visible-ring transition-colors whitespace-nowrap flex items-center text-grey-7 group-hover:text-grey-5 hover:group-hover:text-grey-9" title="Annotate"><div class="flex flex-col items-center gap-y-1 py-2.5 px-2 text-annotator-sm leading-none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" data-component="AnnotateIcon" class="text-annotator-lg" title="Annotate"><path fill="currentColor" d="M15 0c.27 0 .505.099.703.297A.961.961 0 0 1 16 1v15l-4-3H1a.974.974 0 0 1-.703-.29A.953.953 0 0 1 0 12V1A.96.96 0 0 1 .29.29.966.966 0 0 1 1 0h14zM7 3l-.469.063c-.312.041-.656.187-1.031.437-.375.25-.719.646-1.031 1.188C4.156 5.229 4 6 4 7l.002.063.006.062a.896.896 0 0 1 .008.11l-.002.074-.006.066a1.447 1.447 0 0 0 .43 1.188C4.729 8.854 5.082 9 5.5 9c.417 0 .77-.146 1.063-.438C6.854 8.271 7 7.918 7 7.5c0-.417-.146-.77-.438-1.063A1.447 1.447 0 0 0 5.5 6a1.467 1.467 0 0 0-.422.062c.177-1.03.542-1.632 1.094-1.804L7 4V3zm5 0-.469.063c-.312.041-.656.187-1.031.437-.375.25-.719.646-1.031 1.188C9.156 5.229 9 6 9 7l.002.063.006.062a.896.896 0 0 1 .008.11l-.002.074-.006.066a1.447 1.447 0 0 0 .43 1.188c.291.291.645.437 1.062.437.417 0 .77-.146 1.063-.438.291-.291.437-.645.437-1.062 0-.417-.146-.77-.438-1.063A1.447 1.447 0 0 0 10.5 6a1.467 1.467 0 0 0-.422.062c.177-1.03.542-1.632 1.094-1.804L12 4V3z"></path></svg><span data-testid="adder-button-label">Annotate</span></div></button><button role="button" data-component="Button" type="button" aria-label="Highlight" class="focus-visible-ring transition-colors whitespace-nowrap flex items-center text-grey-7 group-hover:text-grey-5 hover:group-hover:text-grey-9" title="Highlight"><div class="flex flex-col items-center gap-y-1 py-2.5 px-2 text-annotator-sm leading-none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" data-component="HighlightIcon" class="text-annotator-lg" title="Highlight"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15H1h11zm-.5-6v2l-1 1v-2l1-1zm.5-7v6h-2V2h2zm0-1h-2 2zm0 8h-2 2z"></path></g></svg><span data-testid="adder-button-label">Highlight</span></div></button></div><div class="absolute left-1/2 -translate-x-1/2 z-2 fill-white text-grey-3 top-0 -translate-y-full"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" data-component="PointerUpIcon"><path stroke="currentColor" d="m.5 9 7-8 8 8"></path></svg></div><div class="sr-only"><span aria-live="polite" aria-atomic="true" role="status" data-testid="annotation-count-announce"></span><ul aria-live="polite" data-testid="annotate-shortcuts-announce"></ul></div></div><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-adder><hypothesis-highlight-cluster-toolbar data-js-focus-visible="" style="position: fixed; top: 4px; left: 4px;"><template shadowrootmode="open"><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-highlight-cluster-toolbar><script id="youtubescript" src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/player_api"></script><script src="./Assignment 4_ APIsolutely About Zombies — CS Java_files/player_api"></script></body></html>

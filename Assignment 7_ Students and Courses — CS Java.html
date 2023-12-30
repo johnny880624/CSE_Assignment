@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html -->
+<html lang="en" class="js-focus-visible" data-js-focus-visible="" style="--hypothesis-other-content-color: var(--hypothesis-color-yellow); --hypothesis-other-content-secondColor: var(--hypothesis-color-yellow-1); --hypothesis-other-content-thirdColor: var(--hypothesis-color-yellow-2); --hypothesis-user-annotations-color: var(--hypothesis-color-orange); --hypothesis-user-annotations-secondColor: var(--hypothesis-color-orange-1); --hypothesis-user-annotations-thirdColor: var(--hypothesis-color-orange-2); --hypothesis-user-highlights-color: var(--hypothesis-color-purple); --hypothesis-user-highlights-secondColor: var(--hypothesis-color-purple-1); --hypothesis-user-highlights-thirdColor: var(--hypothesis-color-purple-2);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/">
+
+    <title>Assignment 7: Students and Courses — CS Java</title>
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/pygments.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/basic.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/matrixeq.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/accessibility.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/webgldemo.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/webglinteractive.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/CodeChat.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/bootstrap-sphinx.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/637.fafafbd97df8a0d1.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/runestone.e4d5592da655219f.css">
+    <link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/custom.css">
+
+
+
+    <script data-url_root="../" id="documentation_options" src="./Assignment 7_ Students and Courses — CS Java_files/documentation_options.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/jquery.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/underscore.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/doctools.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/matrixeq.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/webglinteractive.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/FileSaver.min.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/html4css1.css"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/animationbase.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/runtime.2a6a972e6f4ec153.bundle.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/637.d54be67956c5c660.bundle.js"></script>
+    <script src="./Assignment 7_ Students and Courses — CS Java_files/runestone.e00ad9c8384ced97.bundle.js"></script>
+    <link rel="index" title="Index" href="https://131text.com/ns/books/published/csjava/genindex.html">
+    <link rel="search" title="Search" href="https://131text.com/ns/books/published/csjava/search.html">
+    <link rel="next" title="Module 8: Inheritance" href="https://131text.com/ns/books/published/csjava/Module8-Inheritance/toctree.html">
+    <link rel="prev" title="Studio 7: Object Design" href="https://131text.com/ns/books/published/csjava/Module7-Objects/studio.html">
+
+
+<link rel="shortcut icon" href="https://131text.com/runestone/static/favicon.ico" type="image/ico">
+
+
+
+<link rel="canonical" href="https://ns/books/published/csjava/Module7-Objects/assignment.html">
+
+
+<script>
+  eBookConfig = {};
+  
+    
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = '';
+    eBookConfig.app = eBookConfig.host + '/runestone';
+    eBookConfig.course = 'csjava';
+    eBookConfig.basecourse = 'csjava';
+    eBookConfig.isLoggedIn = false;
+    eBookConfig.email = '';
+    eBookConfig.isInstructor = false;
+    eBookConfig.username = '';
+    eBookConfig.readings = [];
+    eBookConfig.activities = {}
+    eBookConfig.downloadsEnabled = false;
+    eBookConfig.allow_pairs = false
+    eBookConfig.enableCompareMe = true;
+    // _`new_server_prefix`: Defined by the server to be the path to the new server.
+    eBookConfig.new_server_prefix = '/ns';
+    
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = false;
+  eBookConfig.acDefaultLanguage = 'java' ? 'java' : 'python'
+  eBookConfig.runestone_version = '6.3.6';
+  eBookConfig.jobehost = '';
+  eBookConfig.proxyuri_runs = '';
+  eBookConfig.proxyuri_files = '';
+  eBookConfig.enable_chatcodes = false ? false : false;
+  eBookConfig.enableScratchAC = true;
+
+</script>
+
+<!-- Ad Serving Headers Only serve ads to Anonymous Users -->
+
+    
+        
+    
+
+
+
+  <link rel="sidebar" href="https://hypothes.is/app.html" type="application/annotator+html" data-hypothesis-asset=""><link rel="notebook" href="https://hypothes.is/notebook" type="application/annotator+html" data-hypothesis-asset=""><link rel="profile" href="https://hypothes.is/user-profile" type="application/annotator+html" data-hypothesis-asset=""><link rel="preload" as="style" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a" data-hypothesis-asset=""><link rel="hypothesis-client" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/boot.js" type="application/annotator+javascript" data-hypothesis-asset=""><script src="./Assignment 7_ Students and Courses — CS Java_files/annotator.bundle.js" data-hypothesis-asset=""></script><link rel="stylesheet" type="text/css" href="./Assignment 7_ Students and Courses — CS Java_files/highlights.css" data-hypothesis-asset=""></head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="navbar toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+        
+          <a class="brand-logo" href="https://131text.com/runestone/default/user/login" aria-label="Login"><img src="./Assignment 7_ Students and Courses — CS Java_files/RAIcon.png" alt=""></a>
+        
+        <a class="navbar-brand" href="https://131text.com/ns/books/published/csjava/index.html" aria-label="index-page">
+          
+            
+            csjava
+            
+          
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+        <li><span id="browsing_warning"><p class="navbar_message">Saving and Logging are Disabled</p></span></li>
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span class="visuallyhidden" aria-label="Social">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone">Follow @iRunestone</a>
+                <a href="https://www.facebook.com/RunestoneInteractive">Our Facebook Page</a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="./Assignment 7_ Students and Courses — CS Java_files/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="./Assignment 7_ Students and Courses — CS Java_files/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Search">Search</span></i>
+          </a>
+          <ul class="dropdown-menu">
+            
+                <li><a href="https://131text.com/ns/books/published/csjava/index.html" aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href="https://131text.com/ns/books/published/csjava/genindex.html">Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="https://131text.com/ns/books/published/csjava/search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes">
+                <input type="hidden" name="area" value="default">
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span class="visuallyhidden" aria-label="User">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class="loggedinuser">Not logged in</span></li>
+            <li class="divider"></li>
+            <li><a href="https://131text.com/runestone/assignments/chooseAssignment.html">Assignments</a></li>
+            <li><a href="https://131text.com/runestone/assignments/practice">Practice</a></li>
+            <li id="inst_peer_link" style="display: none;"><a href="https://131text.com/runestone/peer/instructor.html">Peer Instruction (Instructor)</a></li>            
+            <li><a href="https://131text.com/runestone/peer/student.html">Peer Instruction (Student)</a></li>            
+            <li class="divider"></li>
+            
+            <li><a href="https://131text.com/runestone/default/courses">Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link" style="display: none;"><a href="https://131text.com/runestone/admin/index">Instructor's Page</a></li>
+            
+            <li><a href="https://131text.com/runestone/dashboard/studentreport">Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="https://131text.com/runestone/default/user/profile" id="profilelink" style="display: none;">Edit Profile</a></li>
+            <li><a href="https://131text.com/runestone/default/user/change_password" id="passwordlink" style="display: none;">Change Password</a></li>
+            <li><a href="https://131text.com/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class="loginout"><a href="https://131text.com/runestone/default/user/login">Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="runestoneComponents.switchTheme()">
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:runestoneComponents.popupScratchAC()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Scratch Activecode">Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span class="visuallyhidden" aria-label="Help">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href="http://runestoneinteractive.org/pages/faq.html">FAQ</a></li>
+            <li><a href="https://runestone.academy/ns/books/published/instructorguide/index.html">Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href="http://runestoneinteractive.org/">About Runestone</a></li>
+            <li><a href="https://131text.com/runestone/default/reportabug?course=csjava&amp;page=assignment">Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+            <script></script>
+<li class="dropdown globaltoc-container">
+    <a href="https://131text.com/ns/books/published/csjava/index.html" class="dropdown-toggle" data-toggle="dropdown" aria-label="index">This Chapter<b class="caret"></b></a>
+    <ul class="dropdown-menu globaltoc">
+         
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/APLine.html">Free Response Question - APLine</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/CBLabs.html">College Board Celebrity and Data Labs</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/Exercises.html">Multiple Choice Exercises</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/Exercises2.html">Exercises</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/FRQstepTracker.html">Free Response Question (FRQ) for Classes</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/JavaSwingGUIs.html">Java Swing GUIs (optional)</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html">Assignment 7: Students and Courses</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/practice-test-objects.html">Practice Test for Objects (2.1-2.5)</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/studio.html">Studio 7: Object Design</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/timeFRQ.html">Free Response Question - Time</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-1-objects-intro-turtles.html">Objects - Instances of Classes</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-10-summary.html">Unit 2 Summary</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-11-practice-mixed-code.html">Mixed Up Code Practice</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-12-practice-coding.html">Coding Practice</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-15-lesson-workspace.html">Lesson Workspace</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-2-constructors.html">Creating and Initializing Objects: Constructors</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-3-methods-no-params.html">Calling Object Methods Without Parameters</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-4-methods-with-params.html">Calling Methods With Parameters</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-5-methods-return.html">Calling Methods that Return Values</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-6-strings.html">Strings</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-7-string-methods.html">String Methods</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-8-IntegerDouble.html">Wrapper Classes - Integer and Double</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-2-9-Math.html">Using the Math Class</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-1-parts-of-class.html">Anatomy of a Java Class</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-10-social-impacts.html">Social Impacts of CS</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-11-summary.html">Unit 6 Summary</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-13-lesson-workspace.html">Lesson Workspace</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-2-writing-constructors.html">Writing Constructors</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-3-comments-conditions.html">Comments and Conditions</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-4-accessor-methods.html">Accessor Methods</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-5-mutator-methods.html">Mutator Methods</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-6-writing-methods.html">Writing Instance Methods</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-7-static-vars-methods.html">Static Variables and Methods</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-8-scope-access.html">Scope and Access</a>
+        </li>
+        
+        <li class="toctree-l1">
+            <a class="reference internal" href="https://131text.com/ns/books/published/csjava/Module7-Objects/topic-6-9-this.html">this Keyword</a>
+        </li>
+         
+        
+    </ul>
+</li>
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-prev" title="Previous Chapter - Studio 7: Object Design" data-toggle="tooltip">
+    <a href="studio.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Module 8: Inheritance' data-toggle="tooltip" >              
+    <a href="../Module8-Inheritance/toctree.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script>
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  window.addEventListener('load', (event) => {
+    $('#relations-prev').tooltip(opts);
+    $('#relations-next').tooltip(opts);
+  });
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+      </div> <!-- navbar-collapse -->
+    </div> <!-- navbar -->
+  </div> <!-- container -->
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+
+<!-- Ad Serving for Runestone Campaign -->
+
+    
+        
+    
+
+
+  
+  <section id="assignment-7-students-and-courses">
+<h1>Assignment 7: Students and Courses<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#assignment-7-students-and-courses" title="Permalink to this heading">¶</a></h1>
+<section id="assignment-setup">
+<h2>Assignment Setup<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#assignment-setup" title="Permalink to this heading">¶</a></h2>
+<p>To create your repository go <a class="reference external" href="https://classroom.github.com/a/4zpKPVmh">here</a>. Then follow the same accept/import process described in <a class="reference external" href="https://131text.com/ns/books/published/csjava/Module0-Introduction/software.html">the setup instructions</a>.</p>
+</section>
+<section id="creating-student-and-course-class">
+<h2>Creating Student and Course class<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#creating-student-and-course-class" title="Permalink to this heading">¶</a></h2>
+<p>Your task is to generate two classes <code class="docutils literal notranslate"><span class="pre">Student</span></code> and <code class="docutils literal notranslate"><span class="pre">Course</span></code> using a <a class="reference external" href="https://en.wikipedia.org/wiki/Test-driven_development">test driven development approach</a> . This means that your goal is to get the unit tests to pass, and you develop your code incrementally to get more of the tests to pass.</p>
+<p>First, take a look at the <code class="docutils literal notranslate"><span class="pre">StudentAndCourseTestSuite.java</span></code> file. Unfortunately, none of the tests will currently pass. You use these tests as you develop your classes to verify whether they are working as intended. You are also encouraged to write some additional tests of your own. Be sure to test often!</p>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#getting-started" title="Permalink to this heading">¶</a></h2>
+<p>Part of the reason that the unit tests do not pass is the classes being tested, <code class="docutils literal notranslate"><span class="pre">Student</span></code> and <code class="docutils literal notranslate"><span class="pre">Course</span></code>, are empty. Your first task is to create bare bones versions of these classes with the methods that will be tested.</p>
+<p>First, open the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class in the assignment 7 package. Then, read the instructions below about what methods the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class should contain. For each method, you should create what is called a <a class="reference external" href="https://en.wikipedia.org/wiki/Method_stub">“stub.”</a> A method stub is a like a placeholder for a method - you specify the method signature, but do not actually write the code for the method itself. For example, you’ll need to create a method to calculate the grade point average for a student. The tests expect a specific signature and return type. The name should be <code class="docutils literal notranslate"><span class="pre">calculateGradePointAverage</span></code>, it won’t require any parameters, and the return type should be <code class="docutils literal notranslate"><span class="pre">double</span></code>. A stub for it would look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">public</span> <span class="n">double</span> <span class="n">calculateGradePointAverage</span><span class="p">()</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="mf">0.0</span><span class="p">;</span> <span class="o">//</span><span class="n">FIXME</span> <span class="n">write</span> <span class="n">a</span> <span class="n">method</span> <span class="n">to</span> <span class="n">compute</span> <span class="n">GPA</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Returning 0 for this method is clearly the incorrect thing to do, but we are simply creating a placeholder for this method with the idea that we will come back and provide functionality at a later time.</p>
+<p>Read the instructions below and create stubs for all of the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class methods. As you do so, you should notice that the unit tests have fewer errors, since it is now able to find the class and the methods being tested. Since the methods don’t work, however, most tests will still fail.</p>
+<p>Once you have done this for the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class, repeat this process for the <code class="docutils literal notranslate"><span class="pre">Course</span></code> class. After you have done this for both classes, you should not see any more errors in any of the unit tests (however none of them will pass yet!). If you still see errors, examine the test to determine what method is missing, then include another method stub.</p>
+<p>Once you have finished creating all the stubs, follow the directions below to implement the desired functionality for your methods.</p>
+</section>
+<section id="creating-a-student-class">
+<h2>Creating a Student class<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#creating-a-student-class" title="Permalink to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Start crafting a <code class="docutils literal notranslate"><span class="pre">Student</span></code> class. Students have lots of wonderful properties, but we are primarily interested in these:</p>
+<ul class="simple">
+<li><p>First Name</p></li>
+<li><p>Last Name</p></li>
+<li><p>Student ID Number</p></li>
+<li><p>Attempted Credits</p></li>
+<li><p>Passing Credits</p></li>
+<li><p>Total Grade Quality Points</p></li>
+<li><p>Bear Bucks Balance</p></li>
+</ul>
+</li>
+</ol>
+<p>How do you know what to name your instance variables? How do you name the getters and setters? Good questions, and this relates to encapsulation.</p>
+<p>Your instance variables can, should, and must be declared <code class="docutils literal notranslate"><span class="pre">private</span></code>. In this way, their names are not exposed outside the Student class, which protects them from unintended access.</p>
+<p>On the other hand, the methods may be referenced by the unit test. The names and type signatures of your method must conform to their use in the unit test. For example, the <code class="docutils literal notranslate"><span class="pre">test()</span></code> method in the <code class="docutils literal notranslate"><span class="pre">assignment7.tests.student</span></code> package’s <code class="docutils literal notranslate"><span class="pre">StudentFullNameTest.java</span></code>’s contains the constructor call:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Student</span> <span class="n">student</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Student</span><span class="p">(</span><span class="n">firstName</span><span class="p">,</span> <span class="n">lastName</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="n">String</span> <span class="n">expected</span> <span class="o">=</span> <span class="n">firstName</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">lastName</span><span class="p">;</span>
+<span class="n">assertEquals</span><span class="p">(</span><span class="n">expected</span><span class="p">,</span> <span class="n">student</span><span class="o">.</span><span class="n">getFullName</span><span class="p">());</span>
+</pre></div>
+</div>
+<p>From this line we can reason that the constructor takes in a <code class="docutils literal notranslate"><span class="pre">String</span></code>, another <code class="docutils literal notranslate"><span class="pre">String</span></code>, and an <code class="docutils literal notranslate"><span class="pre">int</span></code>. We can also reason that the first parameter of the constructor is the student’s first name, and the second parameter is the student’s last name. You can similarly read the test code to see how the methods are named.</p>
+<blockquote>
+<div><p>Go ahead and create a stub for this constructor in <code class="docutils literal notranslate"><span class="pre">Student.java</span></code>. Once you save your work. Check the <code class="docutils literal notranslate"><span class="pre">test()</span></code> method in <code class="docutils literal notranslate"><span class="pre">StudentFullNameTest.java</span></code> and confirm that it’s no longer underlined in red, which will verify that you’ve created a constructor with an appropriate signature.</p>
+<p>If you haven’t already done so, add any instance variables that you think you may need and ensure that the constructor initializes them appropriately.</p>
+</div></blockquote>
+<p>But why all the fuss about encapsulation? Suppose you wanted to count the number of times a student’s ID is accessed. If the instance variable is public, then access to the variable’s value can occur in any other class, beyond the view of the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class. By making the instance variable <code class="docutils literal notranslate"><span class="pre">private</span></code>, and requiring a getter to access the value, the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class can count the number of accesses to the value.</p>
+<p>Suppose you wanted for some reason to change the representation of a student’s ID from an integer to a string, or suppose you really want to change the name of the instance variable. If you made the variable public, then other code may subsequently be written that requires the name and type of the instance variable to stay the same.</p>
+<p>By making the instance variable <code class="docutils literal notranslate"><span class="pre">private</span></code>, you encapsulate it within the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class and you have control therefore over that instance variable’s future.</p>
+<p>Suppose you decide that a student’s ID should not be a settable property of a Student, by any code outside the Student class. If you make the instance variable public, code outside of the Student class can read or write the instance variable. Only by making the variable private can you arrange for the value to be manipulable within the Student class, but not outside of that class.</p>
+<p>Encapsulation allows us to retain control over some aspects of a class’s specification, while releasing only those portions that are necessary by design.</p>
+<p>Add the above properties to your class, create a constructor, create some getters and setters, and test!</p>
+<ol class="arabic simple" start="2">
+<li><p>Now we want to add some functionality to our <code class="docutils literal notranslate"><span class="pre">Student</span></code> class. Below is a list of methods that we are asking you to implement. As you read through the methods below and consider their implementation, you may develop a feeling that your class should have something it does not yet have. Feel empowered to introduce other instance variables as necessary. Remember that they too deserve nice names, they should be initialized in your constructor(s), but they do not need (nor should they have) getters or setters. They are used to manage data within your class.</p></li>
+</ol>
+<p>Once you have implemented a method run the tests again and pay attention to which tests pass.</p>
+<p><code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">getFullName()</span></code> - returns the first and last names with a space between them.</p>
+<p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">getId()</span></code> - returns the student id number.</p>
+<p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">getTotalAttemptedCredits()</span></code> - returns the number of attempted credits (that is, credits for all submitted grades).</p>
+<p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">getTotalPassingCredits()</span></code> - returns the number of passing credits (that is, credits for which the student received at least a 1.7 grade).</p>
+<p><code class="docutils literal notranslate"><span class="pre">double</span> <span class="pre">calculateGradePointAverage()</span></code> - <strong>GPA can be computed by the following formula</strong>:</p>
+<p>Take the number of credits for a course and multiply it by the grade for that course. This is called the <em>quality points</em>. GPA is computed as the sum of all of the quality points for each course the student has taken divided by the total number of <em>attempted credits</em>. <strong>Hint: Think carefully about the choice of type for quality points</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">submitGrade(double</span> <span class="pre">grade,</span> <span class="pre">int</span> <span class="pre">credits)</span></code> - this method takes in a course grade (as a value between 0 and 4) and the number of credits for a course, and updates the student’s credits and GPA points accordingly. For the purposes of this assignment a grade greater than or equal to 1.7 is considered passing and you can think about it as the final, overall grade for the course.</p>
+<p><code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">getClassStanding()</span></code> - returns the students class standing based on how many passing credits they have:</p>
+<ul class="simple">
+<li><p>Fewer than 30: First Year</p></li>
+<li><p>30 or more but less than 60: Sophomore</p></li>
+<li><p>60 or more but less than 90: Junior</p></li>
+<li><p>90 or more: Senior</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">boolean</span> <span class="pre">isEligibleForPhiBetaKappa()</span></code> - The <a class="reference external" href="https://pages.wustl.edu/pbk/membership-and-selection-process#overlay-context=pbk/membership-and-selection-process">Membership and Selection Process</a> outlines the guidelines for eligibility. Let us ignore the College of Arts and Sciences requirement and focus only on the details we are tracking in this assignment.</p>
+<ul class="simple">
+<li><p>a student who has completed at least 98 credits with a cumulative GPA of at least 3.60 (here “completed” means that a final grade has been submitted)</p></li>
+<li><p>a student who has completed at least 75 credits with a cumulative GPA of at least 3.80</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">depositBearBucks(double</span> <span class="pre">amount)</span></code> - increases the Bear Bucks balance by <code class="docutils literal notranslate"><span class="pre">amount</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">deductBearBucks(double</span> <span class="pre">amount)</span></code> - decreases the Bear Bucks balance by <code class="docutils literal notranslate"><span class="pre">amount</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">double</span> <span class="pre">getBearBucksBalance()</span></code> - returns the Bear Bucks balance</p>
+<p><code class="docutils literal notranslate"><span class="pre">double</span> <span class="pre">cashOutBearBucks()</span></code> - Zero out the Bear Bucks balance and return the appropriate amount as follows:</p>
+<ul class="simple">
+<li><p>Remaining balance will be refunded, minus a $10 administrative fee.</p></li>
+<li><p>Balances of $10 or less will be forfeited.</p></li>
+</ul>
+<p>For example:</p>
+<p>if your balance was $42 and your “cashed out” you would receive $32 (via the return value) and your balance would be $0.</p>
+<p>if your balance was $9 and your “cashed out” you would receive $0 (via the return value) and your balance would be $0.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">**</span><span class="n">To</span> <span class="n">reiterate</span><span class="p">:</span><span class="o">**</span>  <span class="n">the</span> <span class="n">student</span><span class="s1">'s Bear Bucks balance should be zeroed out as a result of calling this method.</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Student</span> <span class="pre">createLegacy(String</span> <span class="pre">firstName,</span> <span class="pre">Student</span> <span class="pre">otherParent,</span> <span class="pre">boolean</span> <span class="pre">isHyphenated,</span> <span class="pre">int</span> <span class="pre">id)</span></code> - it is not unusual for two students to meet at college and eventually start a family, and send their children to the same school. Imagine that in an effort to incentivize alums to send their children to their alma mater, WashU will transfer unused Bear Bucks to a legacy. The administrative fees, of course, still apply (and sadly to both parents).</p>
+<p>This method should take parameters for a first name, the other parent, whether the last name should be hyphenated, and a student id number to create and return a new <code class="docutils literal notranslate"><span class="pre">Student</span></code> object as described below. Note: there are three participants in this method:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">this</span></code> parent</p></li>
+<li><p>the other parent</p></li>
+<li><p>the child <code class="docutils literal notranslate"><span class="pre">Student</span></code> that is created and returned by the method.</p></li>
+</ul>
+<p>The newly-created legacy’s state will be determined by:</p>
+<ul class="simple">
+<li><p>The legacy’s first name and id (as you might have imagined) will determined by the <code class="docutils literal notranslate"><span class="pre">firstName</span></code> and <code class="docutils literal notranslate"><span class="pre">id</span></code> parameters.</p></li>
+<li><p>The legacy’s last name with either be the last name of <code class="docutils literal notranslate"><span class="pre">this</span></code> or a hyphenated combination of this-other depending on the value of <code class="docutils literal notranslate"><span class="pre">isHyphenated</span></code>.</p></li>
+<li><p>The legacy should have the amount of money that results from cashing out its parents.</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">toString()</span></code> - returns the students full name and student ID</p>
+<ol class="arabic simple" start="3">
+<li><p>Before moving on, make sure that all of the tests for <code class="docutils literal notranslate"><span class="pre">Student</span></code> pass! There are other tests referenced by <code class="docutils literal notranslate"><span class="pre">CourseTestSuite</span></code> (for the <code class="docutils literal notranslate"><span class="pre">Course</span></code> class that you develop below) that won’t pass yet.</p></li>
+<li><p>Now go back and think again about the instance variables of this class and their getters and setters. Beyond just the getters we dictated for testing purposes, which of the instance variables should have getters, and which should have setters?</p></li>
+</ol>
+<p>To reason about this, you need to think about what the unit test is doing, and you must provide getters or setters so that it can work. But beyond that, think about how this class will be used.</p>
+<ul class="simple">
+<li><p>Should the student ID have a setter? That is, do we want to provision for the student ID of a <code class="docutils literal notranslate"><span class="pre">Student</span></code> object to change? What does the initial story of a <code class="docutils literal notranslate"><span class="pre">Student</span></code> object say about that?</p></li>
+<li><p>How about the name? Washington University allows students to change their names.</p></li>
+<li><p>Should the number of credits be settable directly outside the class? Or should access be more carefully controlled?</p></li>
+</ul>
+<p>The TAs will discuss this with you when you demo.</p>
+</section>
+<section id="creating-a-course-class">
+<h2>Creating a Course class<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#creating-a-course-class" title="Permalink to this heading">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">Course</span></code> class should contain the following properties:</p>
+<ul class="simple">
+<li><p>Name</p></li>
+<li><p>Credits a student earns by taking this course</p></li>
+<li><p>Roster of enrolled Students</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Add these properties to your class, and create a constructor. Write getters for the name, credits, number of “seats remaining” (unfilled seats) and capacity (total number of seats). You do not need one instance variable for every getter, but you may set your class up that way if you’d like.</p></li>
+</ol>
+<p>As before, drive your software development by the unit test. You may want to look at the way unit tests are “constructing” an instance of the class to identify the expected parameters.</p>
+<p>Avoid creating extra functionality that is not demanded by the unit test or specifically required in this document. This approach saves you time and keeps the resulting code simple.</p>
+<blockquote>
+<div><p>Some of the Unit tests expect getters with specific names and parameters. As you work you may want to run tests in <code class="docutils literal notranslate"><span class="pre">CourseTestSuite.java</span></code>. Double click on failed tests to be take to the code for the test. If there are methods that are underlined in red that you haven’t implemented, be sure to implement them. (There are 4 “getters” that are not explicitly listed in this description that you need!)</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Next, implement the following functionality:</p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">boolean</span> <span class="pre">addStudent(Student</span> <span class="pre">s)</span></code> - Check to make sure that the student has not already enrolled and that there is available space. Be sure to update all appropriate instance variables. Return <code class="docutils literal notranslate"><span class="pre">true</span></code> if <code class="docutils literal notranslate"><span class="pre">s</span></code> has been enrolled as a result of this call. Return false otherwise</p>
+<p>How will you check that the student has not already enrolled? You’ll have to keep track of the students as they enroll. Fortunately, when a <code class="docutils literal notranslate"><span class="pre">Course</span></code> object is constructed, we know the maximum number of seats that the course offers, so we know the maximum number of enrolled students.</p>
+<p>From what we have studied, what is the appropriate data type to keep track of enrolled <code class="docutils literal notranslate"><span class="pre">Students</span></code> in a <code class="docutils literal notranslate"><span class="pre">Course</span></code>?</p>
+<p><code class="docutils literal notranslate"><span class="pre">Student</span> <span class="pre">getStudentAt(int</span> <span class="pre">index)</span></code> - return the <code class="docutils literal notranslate"><span class="pre">Student</span></code> at the <code class="docutils literal notranslate"><span class="pre">index</span></code> added.</p>
+<p><code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">generateRoster()</span></code> - Returns a String that represents a roster with all of the <code class="docutils literal notranslate"><span class="pre">Students</span></code> in the course. The roster should contain the <code class="docutils literal notranslate"><span class="pre">Students’</span></code> names. Make sure to omit <em>empty</em> seats!</p>
+<p><code class="docutils literal notranslate"><span class="pre">double</span> <span class="pre">calculateAverageGPA()</span></code> - returns the average GPA of all students enrolled in the course. Make sure to omit <em>empty</em> seats from this calculation.</p>
+<p><code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">toString()</span></code> - The returned <code class="docutils literal notranslate"><span class="pre">String</span></code> should contain the course name and credits.</p>
+</section>
+<section id="comprehensive-unit-test">
+<h2>Comprehensive Unit Test<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#comprehensive-unit-test" title="Permalink to this heading">¶</a></h2>
+<p>When you’re completely done run all the tests in <code class="docutils literal notranslate"><span class="pre">StudentAndCourseTestSuite.java</span></code>, which runs both the <code class="docutils literal notranslate"><span class="pre">Student</span></code> and <code class="docutils literal notranslate"><span class="pre">Course</span></code> tests. If you’ve successfully implemented all the required methods to behave as expected, all the tests should pass.</p>
+</section>
+<section id="submitting-your-work">
+<h2>Submitting your work<a class="headerlink" href="https://131text.com/ns/books/published/csjava/Module7-Objects/assignment.html#submitting-your-work" title="Permalink to this heading">¶</a></h2>
+<p>To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via <a class="reference external" href="https://wustl-cse.help/">wustl-cse.help</a>. Be prepared to show them the work that you have done and answer their questions about it!</p>
+</section>
+</section>
+
+
+  <div id="scprogresscontainer">
+    You have attempted <span id="scprogresstotal">1</span> of <span id="scprogressposs">1</span> activities on this page <div id="subchapterprogress" aria-label="Page progress" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="ui-progressbar-value ui-widget-header ui-corner-left ui-corner-right loggedout" style="width: 500px;"></div></div>
+  </div>
+
+  <ul role="navigation" class="nextprev-list nextprev-list" aria-label="Change page">
+<li id="relations-prev" class="navLink" title="" data-toggle="tooltip" data-original-title="Previous Section - Studio 7: Object Design">
+  <a href="https://131text.com/ns/books/published/csjava/Module7-Objects/studio.html" aria-label="Previous - Studio 7: Object Design">
+    <i class="prevNav glyphicon glyphicon-chevron-left" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
+  </a>
+</li>
+
+  <li id="relations-next" class="navLink" title="" data-toggle="tooltip" data-original-title="Next Section - Module 8: Inheritance">
+    <a href="https://131text.com/ns/books/published/csjava/Module8-Inheritance/toctree.html" aria-label="Next - Module 8: Inheritance">
+      <i id="relationsNextIcon" class="nextNav glyphicon glyphicon-chevron-right" style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+window.addEventListener('load', (event) => {
+  $('#relations-prev').tooltip({'placement': 'right', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement': 'left', 'delay': { show: 100, hide: 50}});
+});
+</script>
+
+</div>
+<footer class="footer">user not logged in</footer>
+
+
+
+  
+    
+  
+
+  
+    <script type="application/json" class="js-hypothesis-config">
+    {
+      "showHighlights": false
+    }
+    </script>
+
+    <script async="" src="./Assignment 7_ Students and Courses — CS Java_files/embed.js"></script>
+    <!--provide space to prevent hypothes.is sidebar from obscuring content-->
+    <style>@media screen and (max-width:767px) { body { padding-right: 21px; }}</style>
+
+  
+
+
+<script>
+  window.addEventListener('load', (event) => {
+    runestoneComponents.getSwitch();
+  });
+</script>
+
+
+  
+<hypothesis-sidebar data-js-focus-visible=""><template shadowrootmode="open"><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"><div class="sidebar-container sidebar-collapsed" style=""><div><div class="absolute left-[-33px] w-[33px] z-2 text-px-base leading-none"><button role="button" data-component="Button" type="button" aria-label="Annotation sidebar" aria-pressed="false" aria-expanded="false" class="transition-colors focus-visible-ring ring-inset h-[40px] w-[33px] pl-[6px] rounded-bl bg-white text-grey-5 hover:text-grey-9 border-l border-b" title="Annotation sidebar" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" data-component="CaretLeftIcon"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12 6 8l4-4"></path></g></svg></button><div class="space-y-px-1.5 mt-px-2"><button role="button" data-component="Button" type="button" aria-label="Show highlights" class="focus-visible-ring transition-colors whitespace-nowrap flex items-center justify-center rounded w-[30px] h-[30px] shadow border bg-white text-grey-6 hover:text-grey-9" title="Show highlights"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" data-component="HideIcon"><path fill="currentColor" d="m1.613.21.094.083 14 14a1 1 0 0 1-1.32 1.497l-.094-.083-14-14A1 1 0 0 1 1.613.21Zm.583 4.845a1 1 0 0 1 .292 1.384C2.165 6.935 2 7.46 2 8c0 2.123 2.628 4 6 4 .22 0 .44-.008.657-.024a1 1 0 0 1 .147 1.994c-.266.02-.534.03-.804.03-4.36 0-8-2.6-8-6 0-.937.283-1.84.812-2.653a1 1 0 0 1 1.384-.292ZM8 2c4.36 0 8 2.6 8 6 0 .937-.283 1.84-.812 2.653a1 1 0 0 1-1.676-1.092C13.835 9.065 14 8.54 14 8c0-2.123-2.628-4-6-4-.22 0-.44.008-.657.024a1 1 0 1 1-.147-1.994C7.462 2.01 7.73 2 8 2Z"></path></svg></button><button role="button" data-component="Button" type="button" aria-label="New page note" class="focus-visible-ring transition-colors whitespace-nowrap flex items-center justify-center rounded w-[30px] h-[30px] shadow border bg-white text-grey-6 hover:text-grey-9" title="New page note"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" data-component="NoteIcon"><path fill="currentColor" d="M14 0a2 2 0 0 1 1.995 1.85L16 2v7a1 1 0 0 1-.31.724l-.09.076-8 6a1 1 0 0 1-.471.192L7 16H2a2 2 0 0 1-1.995-1.85L0 14V2A2 2 0 0 1 1.85.005L2 0h12Zm0 2H2v12h4V9a1 1 0 0 1 .883-.993L7 8h7V2Zm-2 8H8v3l4-3Z"></path></svg></button></div><div class="sr-only" role="status" data-testid="toolbar-status">Highlights hidden</div></div></div><div data-testid="sidebar-edge" class="absolute top-0 bottom-0 w-[23px] left-[-22px] flex flex-col pt-[110px] pr-[5px] bg-grey-2 sidebar-collapsed:bg-black/[.08] pointer-events-none"><hypothesis-bucket-bar data-js-focus-visible="" style="display: block; flex-grow: 1; width: 100%;"><template shadowrootmode="open"><ul class="relative"></ul><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-bucket-bar></div><iframe allowfullscreen="" src="https://hypothes.is/app.html#config=%7B%22openSidebar%22%3Afalse%2C%22showHighlights%22%3A%22never%22%2C%22origin%22%3A%22https%3A%2F%2Fhypothes.is%22%2C%22version%22%3A%221.1398.0%22%2C%22hostURL%22%3A%22https%3A%2F%2F131text.com%2Fns%2Fbooks%2Fpublished%2Fcsjava%2FModule7-Objects%2Fassignment.html%22%7D" title="Hypothesis annotation viewer" class="sidebar-frame"></iframe></div><div><ul aria-live="polite" aria-relevant="additions" class="w-full space-y-2" data-component="ToastMessages"></ul></div></template></hypothesis-sidebar><hypothesis-notebook data-js-focus-visible=""><template shadowrootmode="open"><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-notebook><hypothesis-profile data-js-focus-visible=""><template shadowrootmode="open"><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-profile><hypothesis-adder data-js-focus-visible="" style="position: absolute; top: 0px; left: 0px;"><template shadowrootmode="open"><div class="all-initial border border-solid border-grey-3 absolute select-none bg-white rounded shadow-intense opacity-5" data-component="AdderToolbar" dir="ltr" style="visibility: hidden;"><div class="flex group"><button role="button" data-component="Button" type="button" aria-label="Annotate" class="focus-visible-ring transition-colors whitespace-nowrap flex items-center text-grey-7 group-hover:text-grey-5 hover:group-hover:text-grey-9" title="Annotate"><div class="flex flex-col items-center gap-y-1 py-2.5 px-2 text-annotator-sm leading-none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" data-component="AnnotateIcon" class="text-annotator-lg" title="Annotate"><path fill="currentColor" d="M15 0c.27 0 .505.099.703.297A.961.961 0 0 1 16 1v15l-4-3H1a.974.974 0 0 1-.703-.29A.953.953 0 0 1 0 12V1A.96.96 0 0 1 .29.29.966.966 0 0 1 1 0h14zM7 3l-.469.063c-.312.041-.656.187-1.031.437-.375.25-.719.646-1.031 1.188C4.156 5.229 4 6 4 7l.002.063.006.062a.896.896 0 0 1 .008.11l-.002.074-.006.066a1.447 1.447 0 0 0 .43 1.188C4.729 8.854 5.082 9 5.5 9c.417 0 .77-.146 1.063-.438C6.854 8.271 7 7.918 7 7.5c0-.417-.146-.77-.438-1.063A1.447 1.447 0 0 0 5.5 6a1.467 1.467 0 0 0-.422.062c.177-1.03.542-1.632 1.094-1.804L7 4V3zm5 0-.469.063c-.312.041-.656.187-1.031.437-.375.25-.719.646-1.031 1.188C9.156 5.229 9 6 9 7l.002.063.006.062a.896.896 0 0 1 .008.11l-.002.074-.006.066a1.447 1.447 0 0 0 .43 1.188c.291.291.645.437 1.062.437.417 0 .77-.146 1.063-.438.291-.291.437-.645.437-1.062 0-.417-.146-.77-.438-1.063A1.447 1.447 0 0 0 10.5 6a1.467 1.467 0 0 0-.422.062c.177-1.03.542-1.632 1.094-1.804L12 4V3z"></path></svg><span data-testid="adder-button-label">Annotate</span></div></button><button role="button" data-component="Button" type="button" aria-label="Highlight" class="focus-visible-ring transition-colors whitespace-nowrap flex items-center text-grey-7 group-hover:text-grey-5 hover:group-hover:text-grey-9" title="Highlight"><div class="flex flex-col items-center gap-y-1 py-2.5 px-2 text-annotator-sm leading-none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" data-component="HighlightIcon" class="text-annotator-lg" title="Highlight"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15H1h11zm-.5-6v2l-1 1v-2l1-1zm.5-7v6h-2V2h2zm0-1h-2 2zm0 8h-2 2z"></path></g></svg><span data-testid="adder-button-label">Highlight</span></div></button></div><div class="absolute left-1/2 -translate-x-1/2 z-2 fill-white text-grey-3 top-0 -translate-y-full"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" data-component="PointerUpIcon"><path stroke="currentColor" d="m.5 9 7-8 8 8"></path></svg></div><div class="sr-only"><span aria-live="polite" aria-atomic="true" role="status" data-testid="annotation-count-announce"></span><ul aria-live="polite" data-testid="annotate-shortcuts-announce"></ul></div></div><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-adder><hypothesis-highlight-cluster-toolbar data-js-focus-visible="" style="position: fixed; top: 4px; left: 4px;"><template shadowrootmode="open"><link rel="stylesheet" href="https://cdn.hypothes.is/hypothesis/1.1398.0/build/styles/annotator.css?1ad63a"></template></hypothesis-highlight-cluster-toolbar></body></html>
