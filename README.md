@@ -1,6 +1,7 @@
 # JAVA_Assignments
 
 Hello everyone,  
+
 Welcome to my repository, where I've shared all the assignments I completed during my Introduction to Computer Science course. These assignments encompass a broad range of fundamental concepts in Java, including recursion, Object-Oriented Programming (OOP), arrays, and more. They serve as a showcase of my journey through the basics of this versatile programming language.  
 
 Looking ahead to the next semester, my focus will shift towards a deeper exploration of algorithms. The goal is to enhance the efficiency and effectiveness of my coding practices, refining my ability to write more streamlined and optimized code.   
