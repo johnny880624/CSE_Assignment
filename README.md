@@ -1,14 +1,14 @@
 # JAVA_Assignments
 
-
 Hello everyone,  
-In this repository, I uploaded all of my assignments I've done in my Introduction to Computer Science course.   
-These assignments cover all the foundamental knowledge in JAVA including recursion, OOP, Array etc....  
-In the next Semester, I'm going to delve deeper in the algorithm world to stremeline my code efficiency better.   
-Hope you enjoy the works I done so far.  
+Welcome to my repository, where I've shared all the assignments I completed during my Introduction to Computer Science course. These assignments encompass a broad range of fundamental concepts in Java, including recursion, Object-Oriented Programming (OOP), arrays, and more. They serve as a showcase of my journey through the basics of this versatile programming language.  
+
+Looking ahead to the next semester, my focus will shift towards a deeper exploration of algorithms. The goal is to enhance the efficiency and effectiveness of my coding practices, refining my ability to write more streamlined and optimized code.   
+
+I hope you find these works insightful and enjoy exploring them as much as I enjoyed creating them. Thank you for your interest in my learning journey!    
 
 
-The Assignment questions please refer to the links down below.  
+The Assignment projects please refer to the links down below.  
 [Assignment1](https://131text.com/ns/books/published/csjava/Module1-Types-and-Names/assignment.html)   
 [Assignment2](https://131text.com/ns/books/published/csjava/Module2-Choice-and-Iteration/assignment.html)   
 [Assignment3](https://131text.com/ns/books/published/csjava/Module3-Arrays/assignment.html)    
