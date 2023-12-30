@@ -8,7 +8,7 @@ In the next Semester, I'm going to delve deeper in the algorithm world to streme
 Hope you enjoy the works I done so far.
 ```
 ```
-The Assignment questions please refer to the HTML I provided down below.
+The Assignment questions please refer to the HTML links I provided down below.
 Assignment1: https://131text.com/ns/books/published/csjava/Module1-Types-and-Names/assignment.html
 Assignment2: https://131text.com/ns/books/published/csjava/Module2-Choice-and-Iteration/assignment.html
 Assignment3: https://131text.com/ns/books/published/csjava/Module3-Arrays/assignment.html
